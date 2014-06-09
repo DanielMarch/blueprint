@@ -71,7 +71,7 @@ describe('floors', function(){
       .get('/floors')
       .end(function(err, res){
         expect(res.status).to.equal(200);
-        expect(res.text).to.include('<div class="floors"><p>cement</p><p>4</p></div><div class="floors"><p>water</p><p>5</p></div>');
+        expect(res.text).to.include('<div class="floors"><p>cement</p><p>4</p><p><img src="/img/flooring/tile2-DELETE.png"></p></div><div class="floors"><p>water</p><p>5</p><p><img src="/img/flooring/tile3-DELETE.png"></p></div>');
         done();
       });
     });
