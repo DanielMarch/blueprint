@@ -52,6 +52,8 @@ describe('User', function(){
         expect(building.y).to.deep.equal(200);
         expect(building.locationId).to.deep.equal(Mongo.ObjectID('a123456789abcdef01234567'));
         expect(building.userId).to.deep.equal(Mongo.ObjectID('0123456789abcdef01234567'));
+        expect(building.rooms).to.be.an('array');
+        expect(building.rooms.length).to.equal(0);
         done();
       });
     });

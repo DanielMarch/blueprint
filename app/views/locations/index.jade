@@ -1,0 +1,9 @@
+extends ../shared/template
+
+block content
+  h1= title
+
+  each location in locations
+    div.location
+      p #{location.name}
+      p #{location.rate}

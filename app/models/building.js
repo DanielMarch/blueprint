@@ -12,6 +12,7 @@ class Building{
     building.y = parseInt(obj.y);
     building.locationId = Mongo.ObjectID(obj.locationId);
     building.userId = Mongo.ObjectID(obj.userId);
+    building.rooms = [];
     buildingCollection.save(building, ()=>fn(building));
   }
 

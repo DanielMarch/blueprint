@@ -1,0 +1,9 @@
+extends ../shared/template
+
+block content
+  h1= title
+
+  each floor in floors
+    div.floors
+      p #{floor.name}
+      p #{floor.rate}
